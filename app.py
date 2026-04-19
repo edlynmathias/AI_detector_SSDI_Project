@@ -219,7 +219,7 @@ with tab2:
 
     y_prob = df["probability"]
 
-    fpr, tpr, _ = roc_curve(y_true, y_prob)
+    tpr, fpr, _ = roc_curve(y_true, y_prob)
 
     roc_auc = auc(fpr,tpr)
 
